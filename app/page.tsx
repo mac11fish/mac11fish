@@ -1,19 +1,30 @@
-import {Mac11fishLogo} from '@/components/Mac11fishLogo'
+
+
+import { Mac11fishLogo } from '@/components/Mac11fishLogo'
+import { MainCarousel } from '@/components/main_carousel'
 
 
 export default function Home() {
   return (
-    
+    <>
+    <div className="w-30 absolute top-12 left-8 z-[100]">
+
+<Mac11fishLogo />
+</div>
+
   <main className="flex h-screen">
     
-  <div className="max-w-[600px] px-6 m-auto">
+
+  <div className="max-w-[900px] px-6 m-auto space-y-12">
   
-     <div className="text-xl leading-loose -mt-20">
-       mac11fish
-       <Mac11fishLogo/>
-     </div>
+     
+
+<MainCarousel/>
+
    </div>
 
 </main> 
+</>
+
   );
 }
