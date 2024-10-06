@@ -1,3 +1,5 @@
+import {Mac11fishLogo} from '@/components/Mac11fishLogo'
+
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
   
      <div className="text-xl leading-loose -mt-20">
        mac11fish
+       <Mac11fishLogo/>
      </div>
    </div>
 
