@@ -14,7 +14,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-export function MainCarousel() {
+
+export function MainCarousel(props: Record<string, string>) {
   const plugin = React.useRef(
     Fade()
   )
@@ -22,9 +23,7 @@ export function MainCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-xs"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
+      className="w-full max-w-2xl"
     >
       <CarouselContent>
        
@@ -33,7 +32,7 @@ export function MainCarousel() {
                 <Image
                 className="object-cover "
                 aria-hidden
-                src={d.imgSrc}
+                src={d.imgSrc as any}
                 alt={d.description}
                 width={900}
                 height={900}
