@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/carousel"
 
 
-export function MainCarousel(props: Record<string, string>) {
+export function MainCarousel() {
   const plugin = React.useRef(
     Fade()
   )
@@ -31,7 +31,7 @@ export function MainCarousel(props: Record<string, string>) {
                 <Image
                 className="object-cover "
                 aria-hidden
-                src={d.imgSrc as any}
+                src={d.imgSrc as string}
                 alt={d.description}
                 width={900}
                 height={900}
