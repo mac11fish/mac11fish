@@ -30,6 +30,29 @@ body {
 
 
 @layer base {
+
+  @font-face {
+    font-family: "DegularMono-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/ohno_degular/DegularMono-Regular.woff2) format("woff");
+  }
+
+  @font-face {
+    font-family: "DegularVariable";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./fonts/ohno_degular/DegularVariable.woff2) format("woff");
+  }
+
+
+  body {
+     font-family: "DegularVariable", serif;
+     font-weight: 400;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
