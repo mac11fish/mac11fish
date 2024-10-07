@@ -15,10 +15,13 @@ import {
 
 
 export function MainCarousel() {
-  const plugin = React.useRef(
+
+ /* 
+    // fade plugin    
+    const plugin = React.useRef(
     Fade()
   )
-
+*/
   return (
     <Carousel
 opts={{
