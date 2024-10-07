@@ -21,13 +21,17 @@ export function MainCarousel() {
 
   return (
     <Carousel
+opts={{
+        align: "start",
+      }}
+      orientation="vertical"
       plugins={[plugin.current]}
       className="w-full max-w-2xl"
     >
-      <CarouselContent>
+      <CarouselContent className="-mt-1 h-[450px]">
        
 {projectsData.map((d) => (
-              <CarouselItem key={d.imgSrc}>
+              <CarouselItem key={d.imgSrc} className="pt-1 md:basis-1/2">
                 <Image
                 className="object-cover "
                 aria-hidden
