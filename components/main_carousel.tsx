@@ -25,13 +25,13 @@ opts={{
         align: "start",
       }}
       orientation="vertical"
-      plugins={[plugin.current]}
-      className="w-full max-w-2xl"
+     // plugins={[plugin.current]}
+      className="w-full max-w-7xl h-full"
     >
-      <CarouselContent className="-mt-1 h-[450px]">
+      <CarouselContent className="-mt-1 h-screen bg-black">
        
 {projectsData.map((d) => (
-              <CarouselItem key={d.imgSrc} className="pt-1 md:basis-1/2">
+              <CarouselItem key={d.imgSrc} className="pt-1 flex space-x-6">
                 <Image
                 className="object-cover "
                 aria-hidden
@@ -40,14 +40,17 @@ opts={{
                 width={900}
                 height={900}
               />
-              <h2>{d.title}</h2>
+              <h2 className="pt-24">{d.title}</h2>
 
               </CarouselItem>
 
         ))}
       </CarouselContent>
+
+<div className="fixed w-[300px] top-6 left-[927px] flex space-x-12">
       <CarouselPrevious />
       <CarouselNext />
+</div>
     </Carousel>
   )
 }

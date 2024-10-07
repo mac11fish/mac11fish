@@ -15,13 +15,12 @@ export default function Home() {
   <main className="flex h-screen">
     
 
-  <div className="max-w-[900px] px-6 m-auto space-y-12">
+
   
      
 
 <MainCarousel/>
 
-   </div>
 
 </main> 
 </>
