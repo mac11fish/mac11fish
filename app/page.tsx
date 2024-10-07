@@ -7,7 +7,7 @@ import { MainCarousel } from '@/components/main_carousel'
 export default function Home() {
   return (
     <>
-    <div className="w-30 absolute top-12 left-8 z-[100]">
+    <div className="h-2 absolute top-6 left-6 z-[100]">
 
 <Mac11fishLogo />
 </div>
