@@ -13,11 +13,7 @@ export default function Home() {
 </div>
 
   <main className="flex h-screen">
-    
-
-
-  
-     
+         
 
 <MainCarousel/>
 

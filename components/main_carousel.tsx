@@ -31,7 +31,7 @@ opts={{
      // plugins={[plugin.current]}
       className="w-full max-w-7xl h-full"
     >
-      <CarouselContent className="-mt-1 h-screen bg-black">
+      <CarouselContent className="-mt-1 h-screen">
        
 {projectsData.map((d) => (
               <CarouselItem key={d.imgSrc} className="pt-1 flex space-x-6">
