@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Fade from "embla-carousel-fade"
+// import Fade from "embla-carousel-fade"
 import projectsData from '@/data/projectsData'
 import Image from "next/image"
 
