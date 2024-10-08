@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${degularVariable.variable} ${degularMono.variable} antialiased font-mono`}
+        className={``}
       >
         {children}
       </body>
