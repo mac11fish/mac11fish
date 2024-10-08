@@ -52,9 +52,9 @@ opts={{
         ))}
       </CarouselContent>
 
-<div className="absolute w-[300px] top-6 left-3/4 flex space-x-12">
-      <CarouselPrevious />
-      <CarouselNext />
+<div className="absolute w-1/4   top-6 left-3/4 flex space-x-12">
+      <CarouselPrevious className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:bg-[#0000ff] hover:text-[#FFFFFF] rounded-none" />
+      <CarouselNext className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:bg-[#0000ff] hover:text-[#FFFFFF] rounded-none" />
 </div>
     </Carousel>
   )
