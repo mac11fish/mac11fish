@@ -34,9 +34,9 @@ opts={{
       <CarouselContent className="-mt-1 h-screen">
        <CarouselItem></CarouselItem>
 {projectsData.map((d) => (
-              <CarouselItem key={d.imgSrc} className="pt-1 flex ">
+              <CarouselItem key={d.imgSrc} className="pt-1 md:flex ">
                 <Image
-                className="object-cover w-3/4 pr-4"
+                className="object-cover w-full md:w-3/4 md:pr-4"
                 aria-hidden
                 src={d.imgSrc as string}
                 alt={d.description}
@@ -44,7 +44,7 @@ opts={{
                 height={900}
               />
 
-                <div className="absolute w-1/4 top-30 left-3/4 inset-x-8 pt-24 w-1/4 text-xs ">
+                <div className="md:absolute w-full md:w-1/4 md:left-3/4 md:pt-24 text-xs ">
               <h2 className="">{d.title}</h2>
 <p className="">{d.description}</p>
                 </div>
