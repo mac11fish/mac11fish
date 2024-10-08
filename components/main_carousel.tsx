@@ -46,6 +46,7 @@ opts={{
 
                 <div className="absolute w-1/4 top-30 left-3/4 inset-x-8 pt-24 w-1/4 text-xs ">
               <h2 className="">{d.title}</h2>
+
                 </div>
               </CarouselItem>
 
