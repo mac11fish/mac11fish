@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-// import Fade from "embla-carousel-fade"
+ import Fade from "embla-carousel-fade"
 import projectsData from '@/data/projectsData'
 import Image from "next/image"
 
@@ -16,19 +16,19 @@ import {
 
 export function MainCarousel() {
 
- /* 
+ 
     // fade plugin    
     const plugin = React.useRef(
     Fade()
   )
-*/
+
   return (
     <Carousel
 opts={{
         align: "start",
       }}
       orientation="vertical"
-     // plugins={[plugin.current]}
+      plugins={[plugin.current]}
       className="w-full max-w-7xl h-full"
     >
       <CarouselContent className="-mt-1 h-screen">
