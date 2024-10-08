@@ -34,9 +34,9 @@ opts={{
       <CarouselContent className="-mt-1 h-screen">
        
 {projectsData.map((d) => (
-              <CarouselItem key={d.imgSrc} className="pt-1 flex space-x-6">
+              <CarouselItem key={d.imgSrc} className="pt-1 flex ">
                 <Image
-                className="object-cover w-3/4"
+                className="object-cover w-3/4 pr-4"
                 aria-hidden
                 src={d.imgSrc as string}
                 alt={d.description}
@@ -44,7 +44,7 @@ opts={{
                 height={900}
               />
 
-                <div className="pt-24 w-1/4 text-xs ">
+                <div className="absolute w-1/4 top-30 left-3/4 inset-x-8 pt-24 w-1/4 text-xs ">
               <h2 className="">{d.title}</h2>
                 </div>
               </CarouselItem>
@@ -53,8 +53,8 @@ opts={{
       </CarouselContent>
 
 <div className="absolute w-1/4   top-6 left-3/4 flex space-x-12">
-      <CarouselPrevious className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:bg-[#0000ff] hover:text-[#FFFFFF] rounded-none" />
-      <CarouselNext className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:bg-[#0000ff] hover:text-[#FFFFFF] rounded-none" />
+      <CarouselPrevious className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:text-[#FFFFFF] rounded-none" />
+      <CarouselNext className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:text-[#FFFFFF] rounded-none" />
 </div>
     </Carousel>
   )
