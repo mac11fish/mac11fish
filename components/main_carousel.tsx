@@ -53,8 +53,8 @@ opts={{
       </CarouselContent>
 
 <div className="absolute w-1/4   top-6 left-3/4 flex space-x-12">
-      <CarouselPrevious className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:text-[#FFFFFF] rounded-none" />
-      <CarouselNext className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:text-[#FFFFFF] rounded-none" />
+      <CarouselPrevious className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:bg-[#ff00ff] hover:text-[#FFFFFF] rounded-none" />
+      <CarouselNext className="border-0 bg-[#ff00ff] text-[#ffffff] active:bg-[#000000] hover:bg-[#ff00ff] hover:text-[#FFFFFF] rounded-none" />
 </div>
     </Carousel>
   )
