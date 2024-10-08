@@ -52,7 +52,7 @@ opts={{
         ))}
       </CarouselContent>
 
-<div className="fixed w-[300px] top-6 left-[927px] flex space-x-12">
+<div className="absolute w-[300px] top-6 left-3/4 flex space-x-12">
       <CarouselPrevious />
       <CarouselNext />
 </div>
