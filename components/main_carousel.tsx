@@ -43,8 +43,10 @@ opts={{
                 width={900}
                 height={900}
               />
-              <h2 className="pt-24 w-1/4">{d.title}</h2>
 
+                <div className="pt-24 w-1/4">
+              <h2 className="">{d.title}</h2>
+                </div>
               </CarouselItem>
 
         ))}
