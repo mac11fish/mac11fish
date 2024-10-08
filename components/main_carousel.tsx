@@ -36,14 +36,14 @@ opts={{
 {projectsData.map((d) => (
               <CarouselItem key={d.imgSrc} className="pt-1 flex space-x-6">
                 <Image
-                className="object-cover "
+                className="object-cover w-3/4"
                 aria-hidden
                 src={d.imgSrc as string}
                 alt={d.description}
                 width={900}
                 height={900}
               />
-              <h2 className="pt-24">{d.title}</h2>
+              <h2 className="pt-24 w-1/4">{d.title}</h2>
 
               </CarouselItem>
 
