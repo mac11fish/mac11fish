@@ -1,7 +1,7 @@
 
 
 import { Mac11fishLogo } from '@/components/Mac11fishLogo'
-import { MainCarousel } from '@/components/main_carousel'
+import { ContentList } from '@/components/content_list'
 
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
   <main className="flex h-screen">
          
 
-<MainCarousel/>
+<ContentList/>
 
 
 </main> 
