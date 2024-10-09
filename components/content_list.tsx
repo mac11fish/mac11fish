@@ -2,8 +2,8 @@
 
 import projectsData from '@/data/projectsData'
 import Image from "next/image"
-
-import { motion, useScroll, useSpring } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useSpring, useMotionValueEvent } from "framer-motion";
 import "./styles.css";
 
 
@@ -12,6 +12,18 @@ import "./styles.css";
 
 
 export function ContentList() {
+
+const { scrollY } = useScroll()
+
+useMotionValueEvent(scrollY, "change", (latest) => {
+ // console.log("Page scroll: ", latest)
+})
+
+const ref = useRef(null)
+const { scrollYProgressy } = useScroll({
+  target: ref,
+  offset: ["start end", "end end"]
+})
 
 
 
@@ -36,13 +48,15 @@ const container = {
 };
 
 const imageSection = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0.2 },
   visible: {
     opacity: 1,
 
     transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2
+duration: 0.5,
+delay: .2,
+      delayChildren: 1,
+      staggerChildren: 2
     }
   }
 };
@@ -59,17 +73,29 @@ const item = {
   return (
 
 <>
+
+<svg id="progress" className="progress z-[1000]" width="75" height="75" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
+            <motion.circle
+              cx="50"
+              cy="50"
+              r="30"
+              pathLength="1"
+              className="indicator"
+              style={{ opacity: scrollYProgressy }}
+            />
+          </svg>
+
 <div className="w-full max-w-7xl h-full">
       
 <ul className="-mt-1 h-screen ">
 
-            <li className="h-screen">
-            </li>
+  
 {projectsData.map((d) => (
 <motion.li
-
+ref={ref}
     key={d.imgSrc}
-    className="pt-1 md:flex "
+    className="py-[300px] md:flex "
     variants={imageSection}
     initial="hidden"
     whileInView="visible"
@@ -87,17 +113,27 @@ const item = {
                 height={900}
               />
 
-<div className=" w-full md:w-1/4 text-xs ">
+<motion.div className=" w-full md:w-1/4 text-xs " variants={item}>
               <h2 className="">{d.title}</h2>
 <p className="">{d.description}</p>
-                </div>
+                </motion.div>
+
+<svg id="progress" className="sticky z-[1000]" width="75" height="75" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
+            <motion.circle
+              cx="50"
+              cy="50"
+              r="30"
+              pathLength="1"
+              className="indicator"
+              style={{ opacity: scrollYProgressy }}
+            />
+          </svg>
 
               </motion.li>
 
         ))}
 
-<li className="h-screen">
-            </li>
 
 
       </ul>   
@@ -121,6 +157,11 @@ const item = {
       <motion.li key={index} className="item" variants={item} />
     ))}
   </motion.ul>
+
+
+
+
+
 </div>
 </>
     
