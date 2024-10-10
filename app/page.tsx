@@ -12,7 +12,7 @@ export default function Home() {
 <Mac11fishLogo />
 </div>
 
-  <main className="w-full max-w-7xl h-screen mx-auto">
+  <main className="w-full h-screen mx-auto">
 
 
 <ContentList/>
