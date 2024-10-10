@@ -48,7 +48,7 @@ delay: .2,
 <motion.li
 
     key={d.imgSrc}
-    className="my-[180px] md:my-4 md:flex "
+    className="my-24 md:my-4 md:flex "
     variants={imageSection}
     initial="hidden"
     whileInView="visible"
@@ -66,7 +66,7 @@ delay: .2,
                 height={900}
               />
 
-<motion.div className=" w-full md:w-1/4 text-xs "   viewport={{ once: true}}>
+<motion.div className=" w-full px-4 pt-4 md: md:w-1/4 md:px-0 text-xs "   viewport={{ once: true}}>
               <h2 className="">{d.title}</h2>
 <p className="">{d.description}</p>
                 </motion.div>
