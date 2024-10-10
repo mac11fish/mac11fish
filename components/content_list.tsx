@@ -43,7 +43,6 @@ delay: .2,
       
 <ul className="">
 
-  
 {projectsData.map((d) => (
 <motion.li
 
@@ -66,9 +65,10 @@ delay: .2,
                 height={900}
               />
 
-<motion.div className=" w-full px-4 pt-4 md: md:w-1/4 md:px-0 text-xs "   viewport={{ once: true}}>
+<motion.div className=" w-full px-4 pt-4 md:w-1/4 md:px-0 text-xs "   viewport={{ once: true}}>
               <h2 className="">{d.title}</h2>
 <p className="">{d.description}</p>
+
                 </motion.div>
 
               </motion.li>
@@ -81,8 +81,17 @@ delay: .2,
 
 
 
+<div class="max-w-7xl">
+<svg height="12" width="300" className="stroke-[#f0f] stroke-[6px] mx-auto max-w-7xl fixed bottom-24 right-6">
+  <motion.line x1="300" y1="0" x2="0" y2="0" style={{ pathLength: scaleX }}/>
+<line x1="300" y1="0" x2="0" y2="0" className="opacity-25"/>
+</svg>
+</div>
 
-<motion.div className="progress-bar bg-[#f0f] w-1/4 h-4 fixed top-0 right-0" style={{ scaleX: scaleX }} />
+
+ <svg height="200" width="300" className="stroke-[#f0f] w-1/4 fixed top-24 right-0">
+  <line x1="0" y1="0" x2="300" y2="200" />
+</svg> 
 
 
 
