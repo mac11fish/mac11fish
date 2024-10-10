@@ -80,12 +80,12 @@ delay: .2,
 
 
 
-<div class="max-w-7xl">
+
 <svg height="8" width="360" className="stroke-[#f0f] stroke-[6px] mx-auto max-w-7xl fixed bottom-24 right-6">
   <motion.line x1="360" y1="0" x2="0" y2="0" style={{ pathLength: scaleX }}/>
 <line x1="360" y1="0" x2="0" y2="0" className="opacity-25"/>
 </svg>
-</div>
+
 
 
  <svg height="900" width="900" className="stroke-[#ff00ff33] h-screen left-24 z-[-10] fixed top-0 ">
