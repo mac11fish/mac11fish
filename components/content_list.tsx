@@ -13,15 +13,6 @@ import "./styles.css";
 
 export function ContentList() {
 
-
-const ref = useRef(null)
-const { scrollYProgressy } = useScroll({
-  target: ref,
-  offset: ["start end", "end end"]
-})
-
-
-
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -69,18 +60,6 @@ const item = {
 
 <>
 
-<svg id="progress" className="progress z-[1000]" width="75" height="75" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
-            <motion.circle
-              cx="50"
-              cy="50"
-              r="30"
-              pathLength="1"
-              className="indicator"
-              style={{ opacity: scrollYProgressy }}
-            />
-          </svg>
-
 <div className="w-full max-w-7xl h-full">
       
 <ul className="-mt-1 h-screen ">
@@ -112,18 +91,6 @@ ref={ref}
               <h2 className="">{d.title}</h2>
 <p className="">{d.description}</p>
                 </motion.div>
-
-<svg id="progress" className="sticky z-[1000]" width="75" height="75" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
-            <motion.circle
-              cx="50"
-              cy="50"
-              r="30"
-              pathLength="1"
-              className="indicator"
-              style={{ opacity: scrollYProgressy }}
-            />
-          </svg>
 
               </motion.li>
 
