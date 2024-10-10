@@ -67,7 +67,7 @@ delay: .2,
                 height={900}
               />
 
-{d.imgArray.map((e:any) => (
+{d.imgArray.map((e:string) => (
 
 
 <motion.div
