@@ -3,7 +3,7 @@
 import projectsData from '@/data/projectsData'
 import Image from "next/image"
 import { useRef } from "react";
-import { motion, useScroll, useSpring, useMotionValueEvent } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import "./styles.css";
 
 
@@ -13,7 +13,6 @@ import "./styles.css";
 
 export function ContentList() {
 
-const { scrollY } = useScroll()
 
 const ref = useRef(null)
 const { scrollYProgressy } = useScroll({
