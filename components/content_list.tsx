@@ -2,9 +2,8 @@
 
 import projectsData from '@/data/projectsData'
 import Image from "next/image"
-import { useRef } from "react";
+
 import { motion, useScroll, useSpring } from "framer-motion";
-import "./styles.css";
 
 
 
@@ -20,18 +19,6 @@ export function ContentList() {
     restDelta: 0.001
   });
 
-
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2
-    }
-  }
-};
 
 const imageSection = {
   hidden: { opacity: 0.2 },
