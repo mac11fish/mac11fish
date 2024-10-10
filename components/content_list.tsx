@@ -41,16 +41,16 @@ const imageSection = {
     transition: {
 duration: 0.5,
 delay: .2,
-      delayChildren: 1,
+      delayChildren: 0.5,
       staggerChildren: 2
     }
   }
 };
 
 const item = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { x: -20, opacity: 0.5 },
   visible: {
-    y: 0,
+    x: 0,
     opacity: 1
   }
 };
@@ -60,14 +60,14 @@ const item = {
 
 <>
 
-<div className="w-full max-w-7xl h-full">
+
       
 <ul className="-mt-1 h-screen ">
 
   
 {projectsData.map((d) => (
 <motion.li
-ref={ref}
+
     key={d.imgSrc}
     className="py-[300px] md:flex "
     variants={imageSection}
@@ -87,7 +87,7 @@ ref={ref}
                 height={900}
               />
 
-<motion.div className=" w-full md:w-1/4 text-xs " variants={item}>
+<motion.div className=" w-full md:w-1/4 text-xs " variants={item}     viewport={{ once: true}}>
               <h2 className="">{d.title}</h2>
 <p className="">{d.description}</p>
                 </motion.div>
@@ -101,30 +101,12 @@ ref={ref}
       </ul>   
 
 
-    </div>
 
-<motion.div className="progress-bar bg-black w-full h-8 fixed top-0 left-0" style={{ scaleX }} />
-<div className="">  
-  
-    <motion.ul
-    className="container"
-    variants={container}
-    initial="hidden"
-    whileInView="visible"
-    viewport={
-      { once: true}
-    }
-  >
-    {[0, 1, 2, 3].map((index) => (
-      <motion.li key={index} className="item" variants={item} />
-    ))}
-  </motion.ul>
+
+<motion.div className="progress-bar bg-[#f0f] w-1/4 h-4 fixed top-0 right-0" style={{ scaleX: scaleX }} />
 
 
 
-
-
-</div>
 </>
     
   )
