@@ -84,9 +84,9 @@ delay: .2,
 
 
 
-<svg height="8" width="216" className="stroke-[#f0f] stroke-[6px] mx-auto max-w-7xl fixed bottom-[72px] right-6">
-  <motion.line x1="216" y1="0" x2="0" y2="0" style={{ pathLength: scaleX }}/>
-<line x1="216" y1="0" x2="0" y2="0" className="opacity-25"/>
+<svg height="8" width="216" className="stroke-[#f0f] fixed bottom-[72px] right-6">
+  <motion.line x1="216" y1="0" x2="0" y2="0" className="stroke-[6px]" style={{ pathLength: scaleX }}/>
+<line x1="216" y1="0" x2="0" y2="0" className="opacity-100 stroke-[1px]"/>
 </svg>
 
 
