@@ -1,6 +1,6 @@
 "use client"
 
-import projectsData from '@/data/projectsDatax'
+import projectsData from '@/data/projectsData'
 import Image from "next/image"
 
 import { motion, useScroll, useSpring } from "framer-motion";
