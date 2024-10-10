@@ -88,7 +88,7 @@ delay: .2,
 
 
 
- <svg height="900" width="900" className="stroke-[#ff00ff33] h-screen left-24 z-[-10] fixed top-0 ">
+ <svg height="900" width="900" className="stroke-[#ff00ff33] h-screen -left-[300px] z-[-10] fixed top-0 ">
   <line x1="0" y1="0" x2="900" y2="900" />
 </svg> 
 
