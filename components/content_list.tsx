@@ -67,30 +67,6 @@ delay: .2,
                 height={900}
               />
 
-{d.imgArray.map((e:string) => (
-
-
-<motion.div
-
-key={e}
-    variants={imageSection}
-    initial="hidden"
-    whileInView="visible"
-
-  >
-                <Image
-
-                className="object-cover w-full"
-                aria-hidden
-                src={e as string}
-                alt={e}
-                width={900}
-                height={900}
-              />
-</motion.div>
-
-        ))}
-
 </div>
 
 <motion.div className=" w-full px-4 pt-4 md:w-1/3 md:max-w-[380px] md:pr-6 md:pl-4 md:fixed md:left-2/3  text-xs "   viewport={{ once: true}}>
