@@ -48,7 +48,7 @@ delay: .2,
 <motion.li
 
     key={d.imgSrc}
-    className="py-[180px] md:flex "
+    className="my-[180px] md:flex "
     variants={imageSection}
     initial="hidden"
     whileInView="visible"
