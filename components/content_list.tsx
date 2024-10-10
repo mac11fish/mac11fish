@@ -26,19 +26,11 @@ const imageSection = {
     opacity: 1,
 
     transition: {
-duration: 0.5,
+duration: 0.2,
 delay: .2,
-      delayChildren: 0.5,
-      staggerChildren: 2
+      delayChildren: 0,
+      staggerChildren: 0
     }
-  }
-};
-
-const item = {
-  hidden: { x: -20, opacity: 0.5 },
-  visible: {
-    x: 0,
-    opacity: 1
   }
 };
 
@@ -49,14 +41,14 @@ const item = {
 
 
       
-<ul className="-mt-1 h-screen ">
+<ul className="">
 
   
 {projectsData.map((d) => (
 <motion.li
 
     key={d.imgSrc}
-    className="py-[300px] md:flex "
+    className="py-[180px] md:flex "
     variants={imageSection}
     initial="hidden"
     whileInView="visible"
@@ -74,7 +66,7 @@ const item = {
                 height={900}
               />
 
-<motion.div className=" w-full md:w-1/4 text-xs " variants={item}     viewport={{ once: true}}>
+<motion.div className=" w-full md:w-1/4 text-xs "   viewport={{ once: true}}>
               <h2 className="">{d.title}</h2>
 <p className="">{d.description}</p>
                 </motion.div>
