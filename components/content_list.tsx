@@ -15,10 +15,6 @@ export function ContentList() {
 
 const { scrollY } = useScroll()
 
-useMotionValueEvent(scrollY, "change", (latest) => {
- // console.log("Page scroll: ", latest)
-})
-
 const ref = useRef(null)
 const { scrollYProgressy } = useScroll({
   target: ref,
