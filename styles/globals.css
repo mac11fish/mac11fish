@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  @font-face {
+    font-family: "DegularMono-Thin";
+    font-style: normal;
+
+    font-display: swap;
+    src: url(./fonts/ohno_degular/DegularMono-Regular.woff2) format("woff");
+  }
+
+  @font-face {
+    font-family: "DegularMono-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/ohno_degular/DegularMono-Regular.woff2) format("woff");
+  }
+
+  @font-face {
+    font-family: "DegularMono-Black";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./fonts/ohno_obviously/Obviously-ExtendedMedium.woff) format("woff");
+  }
+
+
+  body {
+     font-family: "DegularMono-Regular", serif;
+  }
+
+h1 {
+     font-family: "DegularMono-Black", serif;
+
+  }
+
+p {
+  @apply mb-4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold
+    mb-1;
+}
+
+h1 {
+  @apply text-4xl uppercase;
+}
+
+:root {
+@apply transition-colors duration-1000
+}

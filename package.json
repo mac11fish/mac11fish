@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --legacy-peer-deps",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.3.1",
     "contentlayer": "latest",
     "date-fns": "2.30.0",
     "framer-motion": "^11.11.7",
