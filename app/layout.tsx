@@ -1,6 +1,6 @@
-import '../styles/globals.css'
-import { ProgressLine } from '../components/progress_line'
-import { Mac11fishLogo } from '../components/mac11fish_logo'
+import '@/styles/globals.css'
+import { ProgressLine } from '@/components/progress_line'
+import { Mac11fishLogo } from '@/components/mac11fish_logo'
 import type { Metadata } from "next";
 
 
