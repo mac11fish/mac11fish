@@ -52,7 +52,7 @@ h6 {
 }
 
 h1 {
-  @apply text-4xl uppercase;
+  @apply text-xl uppercase;
 }
 
 :root {
