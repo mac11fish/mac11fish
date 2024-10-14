@@ -1,3 +1,4 @@
+
 const { withContentlayer } = require("next-contentlayer");
 
 /** @type {import('next').NextConfig} */

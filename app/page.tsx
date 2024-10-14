@@ -4,10 +4,26 @@ import { allPosts, Post } from "contentlayer/generated";
 import { getMDXComponent } from "next-contentlayer/hooks";
 import { PostList } from '@/components/post_list'
 
+import MuxPlayer from "@mux/mux-player-react"; 
+
 
 export default function Home() {
 
   return (
+<>
+
+<MuxPlayer
+  autoPlay="muted"
+  streamType="on-demand"
+  playbackId="POObWzaOWfMFIHuGSUNyz01EO3RG75SjJtHj34xSfpR8"
+  metadataVideoTitle="Placeholder (optional)"
+  metadataViewerUserId="Placeholder (optional)"
+  primaryColor="#FFFFFF"
+  secondaryColor="#000000"
+/>
+
     <PostList />
+</>
   );
 }
+
