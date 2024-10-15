@@ -28,7 +28,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
         
 
     <ul className="space-y-[600px] md:pr-12 text-xs">
-<li  className="h-screen content-center">
+<li  className="h-screen content-start">
 
         <ScrollDown />
 
