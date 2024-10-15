@@ -12,18 +12,6 @@ export default function Home() {
   return (
 <>
 
-
-<MuxPlayer
-  nohotkeys
-  autoPlay="muted"
-  streamType="on-demand"
-  playbackId="POObWzaOWfMFIHuGSUNyz01EO3RG75SjJtHj34xSfpR8"
-  metadataVideoTitle="Placeholder (optional)"
-  metadataViewerUserId="Placeholder (optional)"
-  accentColor="#000000"
-  primaryColor="#ff00ff"
-  secondaryColor="#00000000"
-/>
 <ScrollDown />
     <PostList />
 </>

@@ -3,7 +3,7 @@ import { allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 
 import { ScrollDown } from '@/components/ScrollDown'
-
+import MuxPlayer from "@mux/mux-player-react";
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
@@ -32,6 +32,8 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
         <ScrollDown />
 
+        </li>
+
 
 {vidList.map((i, idx) => (
         <li key={idx}>
@@ -48,12 +50,6 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 />
         </li>
       ))}
-
-
-
-
-
-        </li>
 {imgList.map((i, idx) => (
         <li key={idx}>
             <
