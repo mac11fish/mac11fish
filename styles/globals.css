@@ -59,6 +59,10 @@ h1 {
 @apply transition-colors duration-1000
 }
 
+a {
+@apply hover:text-accent
+}
+
 media-rendition-menu-button {
     display: none;
 }
@@ -75,8 +79,8 @@ media-rendition-menu-button {
 
 mux-player {
 /*
-  --time-range: block;
-
+  --time-range: none;
+  --fullscreen-button: none;
   --play-button: none;
 */
 
@@ -99,7 +103,7 @@ mux-player {
   --captions-button: none;
   --airplay-button: none;
   --pip-button: none;
-  --fullscreen-button: none;
+
   --cast-button: none;
   --playback-rate-button: none;
   --volume-range: none;

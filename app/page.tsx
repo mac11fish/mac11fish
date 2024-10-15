@@ -5,12 +5,13 @@ import { getMDXComponent } from "next-contentlayer/hooks";
 import { PostList } from '@/components/post_list'
 
 import MuxPlayer from "@mux/mux-player-react"; 
-
+import { ScrollDown } from '@/components/ScrollDown'
 
 export default function Home() {
 
   return (
 <>
+
 
 <MuxPlayer
   nohotkeys
@@ -23,7 +24,7 @@ export default function Home() {
   primaryColor="#ff00ff"
   secondaryColor="#00000000"
 />
-
+<ScrollDown />
     <PostList />
 </>
   );

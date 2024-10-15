@@ -16,7 +16,7 @@ export function ScrollDown() {
 
   return (
 <>
-<motion.div  className="p-6 flex" >
+<motion.div  className="p-6 flex text-xs" >
        <div> scroll down</div>
 
 <div  className="pl-1 animate-[bounce_0.75s_ease-in-out_infinite]">
