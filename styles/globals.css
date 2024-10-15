@@ -84,6 +84,7 @@ mux-player {
   --play-button: none;
   --rendition-selectmenu: none;
   --cast-button: none;
+  --airplay-button: none;
 */
 
   /* Hide all controls at once 
@@ -103,7 +104,7 @@ mux-player {
   --seek-forward-button: none;
   --mute-button: none;
   --captions-button: none;
-  --airplay-button: none;
+
   --pip-button: none;
 
 

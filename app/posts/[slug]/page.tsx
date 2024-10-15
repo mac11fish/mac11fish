@@ -23,7 +23,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
   return (
 <>
 {vidList.map((i, idx) => (
-        <div className="w-full" key={idx}>
+        <div className="w-full pt-[600px]" key={idx}>
             <MuxPlayer
   nohotkeys
   autoPlay="muted"
@@ -43,7 +43,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
       <div className="w-full md:w-3/4">
     <ul className="space-y-[420px] md:pr-12 text-xs">
-<li  className="h-screen content-start">
+<li  className="content-start">
 
         <ScrollDown />
 
