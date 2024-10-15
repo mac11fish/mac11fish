@@ -11,7 +11,7 @@ export function ScrollDown() {
     damping: 30,
     restDelta: 0.001
   });
-  const scaleXb = 1 - scrollYProgress
+
 
 
   return (
