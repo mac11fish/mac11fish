@@ -22,21 +22,8 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
   return (
 <>
-            
-    <article className="md:flex">
-      <div className="w-full md:w-3/4">
-        
-
-    <ul className="space-y-[420px] md:pr-12 text-xs">
-<li  className="h-screen content-start">
-
-        <ScrollDown />
-
-        </li>
-
-
 {vidList.map((i, idx) => (
-        <li key={idx}>
+        <div className="w-full" key={idx}>
             <MuxPlayer
   nohotkeys
   autoPlay="muted"
@@ -48,8 +35,22 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
   primaryColor="#ff00ff"
   secondaryColor="#00000000"
 />
-        </li>
+        </div>
       ))}
+            
+    <article className="md:flex">
+
+
+      <div className="w-full md:w-3/4">
+    <ul className="space-y-[420px] md:pr-12 text-xs">
+<li  className="h-screen content-start">
+
+        <ScrollDown />
+
+        </li>
+
+
+
 {imgList.map((i, idx) => (
         <li key={idx}>
             <
@@ -65,7 +66,7 @@ img src={i}/>
 
 
       </div>
-      <div className="w-full p-6 top-12 fixed md:top-6 text-xs">
+      <div className="w-full p-6 top-12 fixed md:top-6 text-xs z-[1000]">
 <h1 className="pb-8 ">{post.title}</h1>
 <time dateTime={post.date} className="mb-1">
           {format(parseISO(post.date), 'LLLL d, yyyy')}
