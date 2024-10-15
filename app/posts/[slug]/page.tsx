@@ -2,6 +2,9 @@ import { format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 
+import { ScrollDown } from '@/components/ScrollDown'
+
+
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
 export const generateMetadata = ({ params }) => {
@@ -19,16 +22,27 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
   return (
 <>
-        
+            
     <article className="py-8 md:flex">
       <div className="w-full md:w-2/3">
         
 
-    <div className="py-[900px] space-y-60 md:pr-12">
+    <ul className="space-y-[600px] md:pr-12 text-xs">
+<li  className="h-screen">
+
+        <ScrollDown />
+
+        </li>
 {imgList.map((i, idx) => (
-        <img key={idx} src={i}/>
+        <li key={idx}>
+            <img src={i}/>
+        </li>
       ))}
-</div>
+
+        <li  className="pb-24 p-6">
+        <Content className=""/>
+        </li>
+</ul>
 
 
       </div>

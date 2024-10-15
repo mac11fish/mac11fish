@@ -17,8 +17,8 @@ export function ProgressLine() {
 <>
 <label className="swap fixed bottom-[150px] right-6 z-[100] text-[12px]">
   <input type="checkbox" className="theme-controller" value="lightx" />
-  <div className="swap-on">Dark</div>
-  <div className="swap-off">Light</div>
+  <div className="swap-on text-right">Light</div>
+  <div className="swap-off text-right">Dark</div>
 </label>
 
 <svg height="8" width="216" className="stroke-current fixed bottom-[120px] right-6 z-[100]">
