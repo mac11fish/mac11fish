@@ -23,7 +23,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
   return (
 <>
             
-    <article className="py-8 md:flex">
+    <article className="md:flex">
       <div className="w-full md:w-2/3">
         
 
@@ -41,6 +41,11 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
         <li  className="pb-24 p-6">
         <Content className=""/>
+<label className="swap">
+  <input type="checkbox" className="t" value="lightx" />
+  <div className="swap-on text-right"><img src={imgList[3]}/></div>
+  <div className="swap-off text-right"><img src={imgList[2]}/></div>
+</label>
         </li>
 </ul>
 
