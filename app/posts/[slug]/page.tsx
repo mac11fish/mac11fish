@@ -39,7 +39,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
         </li>
       ))}
 
-<li  className="h-screen content-start p-6 pt-24">
+<li  className="h-screen content-start p-6 pt-48 sm:pt-12">
         <Content className=""/>
 
         </li>
@@ -48,7 +48,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
       </div>
       <div className="w-full p-6 top-12 md:w-1/3 fixed md:top-6 text-xs md:right-6">
-<h1 className="pb-12 ">{post.title}</h1>
+<h1 className="pb-8 ">{post.title}</h1>
 <time dateTime={post.date} className="mb-1">
           {format(parseISO(post.date), 'LLLL d, yyyy')}
         </time>
