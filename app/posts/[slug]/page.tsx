@@ -53,7 +53,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
           {format(parseISO(post.date), 'LLLL d, yyyy')}
         </time>
 
-<p className="pb-6 ">{post.credits}</p>
+<p className="">{post.credits}</p>
 <Content className=""/>
 </div>
     </article>
