@@ -39,7 +39,7 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
         </li>
       ))}
 
-<li  className="h-screen content-end p-6 pb-48">
+<li  className="h-screen content-start p-6 pt-24">
         <Content className=""/>
 
         </li>
