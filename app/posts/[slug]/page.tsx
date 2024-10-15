@@ -39,13 +39,9 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
         </li>
       ))}
 
-        <li  className="pb-24 p-6">
+<li  className="h-screen content-end p-6 pb-48">
         <Content className=""/>
-<label className="swap">
-  <input type="checkbox" className="t" value="lightx" />
-  <div className="swap-on text-right"><img src={imgList[3]}/></div>
-  <div className="swap-off text-right"><img src={imgList[2]}/></div>
-</label>
+
         </li>
 </ul>
 
@@ -56,7 +52,8 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 <time dateTime={post.date} className="mb-1">
           {format(parseISO(post.date), 'LLLL d, yyyy')}
         </time>
-      <Content className="sticky"/>
+
+<p className="pb-12 ">{post.credits}</p>
 </div>
     </article>
 </>
