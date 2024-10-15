@@ -27,15 +27,37 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
       <div className="w-full md:w-3/4">
         
 
-    <ul className="space-y-[600px] md:pr-12 text-xs">
+    <ul className="space-y-[420px] md:pr-12 text-xs">
 <li  className="h-screen content-start">
 
         <ScrollDown />
 
+
+{vidList.map((i, idx) => (
+        <li key={idx}>
+            <MuxPlayer
+  nohotkeys
+  autoPlay="muted"
+  streamType="on-demand"
+  playbackId={i}
+  metadataVideoTitle="Placeholder (optional)"
+  metadataViewerUserId="Placeholder (optional)"
+  accentColor="#000000"
+  primaryColor="#ff00ff"
+  secondaryColor="#00000000"
+/>
+        </li>
+      ))}
+
+
+
+
+
         </li>
 {imgList.map((i, idx) => (
         <li key={idx}>
-            <img src={i}/>
+            <
+img src={i}/>
         </li>
       ))}
 
