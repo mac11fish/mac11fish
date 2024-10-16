@@ -11,6 +11,10 @@ const Post = defineDocumentType(() => ({
       description: 'The title of the post',
       required: true,
     },
+    subTitle: {
+      type: 'string',
+      description: 'The subtitle of the post',
+    },
     images: {
       type: 'list',
       description: 'Array list of images',
