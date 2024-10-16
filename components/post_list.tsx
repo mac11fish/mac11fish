@@ -30,7 +30,7 @@ function PostCard(post: Post) {
         
     </div>
 
-<div className="sticky bottom-0 w-full p-6 md:w-1/3 md:left-2/3 text-xs " >
+<div className="w-full p-6 md:w-1/3 md:left-2/3 text-xs " >
               
         
           <h2 className="text-sm uppercase post-title">{post.title}      </h2>
