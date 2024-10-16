@@ -22,10 +22,19 @@ function PostCard(post: Post) {
 
 <div  className="w-full md:w-2/3 space-y-6">
 
+{
+/* check to see if videoGif is present */
+post?.videoGif ? 
+<Link className="bg-base-content pt-6" href={post.url}>
+<img className="object-cover w-full" src={animatedGif} />
+</Link>
+ : /* if videoGif is not present, load the first image in the images array */
 <Link className="bg-base-content" href={post.url}>
 {post?.images ? <img src={post.images[0]} /> : <>{post.title}</> }
 </Link>
-{post?.videoGif ? <Link className="bg-base-content pt-6" href={post.url}><img className="object-cover w-full" src={animatedGif} /></Link> : <></> }
+}
+
+
 
         
     </div>
