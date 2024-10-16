@@ -18,7 +18,9 @@ function PostCard(post: Post) {
 
   return (
 <>
-<div  className="w-full md:w-2/3 md:pr-12 md:pr-6 space-y-6">
+
+
+<div  className="w-full md:w-2/3 space-y-6">
 
 {post?.videos ? <Link className="bg-base-content" href={post.url}><img className="object-cover h-[600px]" src={animatedGif} /></Link> : <></> }
 {post?.images ? <img src={post.images[0]} /> : <>{post.title}</> }
@@ -26,7 +28,7 @@ function PostCard(post: Post) {
         
     </div>
 
-<div className=" w-full p-6 md:w-1/3 md:left-2/3  text-xs " >
+<div className="sticky bottom-6 w-full p-6 md:w-1/3 md:left-2/3 text-xs " >
               
         
           <h2 className="text-xs">{post.title}      </h2>
@@ -38,6 +40,8 @@ function PostCard(post: Post) {
       </div>
 
                 </div>
+
+
 </>
 
   );
