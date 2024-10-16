@@ -24,7 +24,7 @@
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url(./fonts/ohno_obviously/Obviously-WideSemibold.woff) format("woff");
+    src: url(./fonts/ohno_obviously/Obviously-ExtendedMedium.woff) format("woff");
   }
 
 
@@ -52,7 +52,7 @@ h6 {
 }
 
 h1 {
-  @apply text-2xl uppercase ;
+  @apply text-xl uppercase ;
 }
 
 :root {
