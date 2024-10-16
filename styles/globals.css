@@ -20,7 +20,7 @@
   }
 
   @font-face {
-    font-family: "DegularDisplay-Black";
+    font-family: "Obviously-ExtendedMedium";
     font-style: normal;
     font-weight: 600;
     font-display: swap;
@@ -34,6 +34,11 @@
 
 h1 {    
      font-family: "DegularDisplay-Black", serif;
+
+  }
+
+.post-title {    
+     font-family: "Obviously-ExtendedMedium", serif;
 
   }
 
