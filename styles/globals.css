@@ -46,6 +46,10 @@ p {
   @apply mb-6;
 }
 
+.credits {
+  @apply pt-6;
+}
+
 h1,
 h2,
 h3,
