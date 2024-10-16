@@ -14,17 +14,13 @@ function PostCard(post: Post) {
   const imgList = post?.images || ['']
   const vidList = post?.videos || ['']
 
-
-
-
   const animatedGif = `https://image.mux.com/${vidList[0]}/animated.gif?height=640&fps=24&start=200`
-
-
 
   return (
 <>
-<div  className="w-full md:w-2/3 md:pr-12 md:pr-4 space-y-48">
-{post?.videos ? <Link href={post.url}><img className="object-cover h-[600px]" src={animatedGif} /></Link> : <></> }
+<div  className="w-full md:w-2/3 md:pr-12 md:pr-6 space-y-6">
+
+{post?.videos ? <Link className="bg-base-content" href={post.url}><img className="object-cover h-[600px]" src={animatedGif} /></Link> : <></> }
 {post?.images ? <img src={post.images[0]} /> : <>{post.title}</> }
 
         
@@ -77,7 +73,7 @@ delay: .2,
 <motion.li
 
     key={idx}
-    className="mb-48 md:flex "
+    className="mb-60 md:flex "
     variants={imageSection}
     initial="hidden"
     whileInView="visible"
