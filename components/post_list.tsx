@@ -14,7 +14,7 @@ function PostCard(post: Post) {
   const imgList = post?.images || ['']
   const vidList = post?.videos || ['']
 
-  const animatedGif = post?.videoGif || ['']
+  const animatedGif = post?.videoGif || ''
 
   return (
 <>
