@@ -4,33 +4,30 @@ import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts, Post } from "contentlayer/generated";
 import { getMDXComponent } from "next-contentlayer/hooks";
 import { motion, useScroll, useSpring } from "framer-motion";
-import Image from "next/image"
+
+
+
 
 function PostCard(post: Post) {
   const Content = getMDXComponent(post.body.code);
 
   const imgList = post?.images || ['']
+  const vidList = post?.videos || ['']
+
+
+
+
+  const animatedGif = `https://image.mux.com/${vidList[0]}/animated.gif?height=640&fps=24&start=200`
+
+
 
   return (
 <>
 <div  className="w-full md:w-2/3 md:pr-12 md:pr-4 space-y-48">
-        <Link
-          href={post.url}
-          className=""
-          legacyBehavior>
+{post?.videos ? <Link href={post.url}><img className="object-cover h-[600px]" src={animatedGif} /></Link> : <></> }
+{post?.images ? <img src={post.images[0]} /> : <>{post.title}</> }
 
-
-
-                <Image
-                className="object-cover w-full"
-                aria-hidden
-                src={imgList[0] as string}
-                alt={post.title}
-                width={900}
-                height={900}
-              />
-
-        </Link>
+        
     </div>
 
 <div className=" w-full p-6 md:w-1/3 md:left-2/3  text-xs " >
@@ -72,7 +69,9 @@ delay: .2,
   return (
     <ul>
 
-<li className="h-screen"></li>
+<li className="h-screen">
+
+</li>
 
       {posts.map((post, idx) => (
 <motion.li
