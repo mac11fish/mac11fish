@@ -22,13 +22,15 @@ function PostCard(post: Post) {
 
 <div  className="w-full md:w-2/3 space-y-6">
 
-{post?.videos ? <Link className="bg-base-content" href={post.url}><img className="object-cover h-[600px]" src={animatedGif} /></Link> : <></> }
+<Link className="bg-base-content" href={post.url}>
 {post?.images ? <img src={post.images[0]} /> : <>{post.title}</> }
+</Link>
+{post?.videos ? <Link className="bg-base-content pt-6" href={post.url}><img className="object-cover w-full" src={animatedGif} /></Link> : <></> }
 
         
     </div>
 
-<div className="sticky bottom-6 w-full p-6 md:w-1/3 md:left-2/3 text-xs " >
+<div className="sticky bottom-1/2 w-full p-6 md:w-1/3 md:left-2/3 text-xs " >
               
         
           <h2 className="text-xs">{post.title}      </h2>
