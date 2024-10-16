@@ -15,6 +15,10 @@ const Post = defineDocumentType(() => ({
       type: 'string',
       description: 'The subtitle of the post',
     },
+    credits: {
+      type: 'string',
+      description: 'credits associated with the content',
+    },
     images: {
       type: 'list',
       description: 'Array list of images',
