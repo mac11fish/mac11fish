@@ -14,7 +14,7 @@ function PostCard(post: Post) {
   const imgList = post?.images || ['']
   const vidList = post?.videos || ['']
 
-  const animatedGif = `https://image.mux.com/${vidList[0]}/animated.gif?height=640&fps=24&start=200`
+  const animatedGif = post?.videoGif || ['']
 
   return (
 <>
@@ -25,7 +25,7 @@ function PostCard(post: Post) {
 <Link className="bg-base-content" href={post.url}>
 {post?.images ? <img src={post.images[0]} /> : <>{post.title}</> }
 </Link>
-{post?.videos ? <Link className="bg-base-content pt-6" href={post.url}><img className="object-cover w-full" src={animatedGif} /></Link> : <></> }
+{post?.videoGif ? <Link className="bg-base-content pt-6" href={post.url}><img className="object-cover w-full" src={animatedGif} /></Link> : <></> }
 
         
     </div>

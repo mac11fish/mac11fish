@@ -11,19 +11,18 @@ const Post = defineDocumentType(() => ({
       description: 'The title of the post',
       required: true,
     },
-    credits: {
-      type: 'string',
-      description: 'credits of the post',
-
-    },
     images: {
       type: 'list',
       description: 'Array list of images',
       of: { type: 'string' },
     },
+    videoGif: {
+      type: 'string',
+      description: 'animated GIF url of the post',
+    },
     videos: {
       type: 'list',
-      description: 'Array list of videos',
+      description: 'Array list of video IDs',
       of: { type: 'string' },
     },
     date: {
