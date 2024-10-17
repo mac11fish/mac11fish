@@ -1,12 +1,16 @@
 # mac11fish portfolio website based on Next.js Contentlayer Example
 
+[![screenshot](https://mac11fish.vercel.app/images/ss.mac11fish.website.png)]
+
+
+typeface credits: 
+OHNO Type Co.
+OHNO Degular Mono and OHNO Obviously are featured
+
 ## Demo
 
 View the deployed project: [Demo](https://mac11fish.vercel.app/)
 
-## Try it Now
-
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](http://gitpod.io/#https://github.com/contentlayerdev/next-contentlayer-example)
 
 ## Local Installation
 
