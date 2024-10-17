@@ -1,8 +1,8 @@
-# Next.js Contentlayer Example
+# mac11fish portfolio website based on Next.js Contentlayer Example
 
 ## Demo
 
-View the deployed project: [Demo](https://next-contentlayer-example.vercel.app/)
+View the deployed project: [Demo](https://mac11fish.vercel.app/)
 
 ## Try it Now
 
@@ -12,12 +12,12 @@ View the deployed project: [Demo](https://next-contentlayer-example.vercel.app/)
 
 Clone the project:
 
-    git clone git@github.com:contentlayerdev/next-contentlayer-example.git
+    git clone git@github.com:mac11fish/mac11.fish.git
 
 Install dependencies:
 
-    yarn
+    npm i
 
 Run dev server:
 
-    yarn dev
+    npm run dev
