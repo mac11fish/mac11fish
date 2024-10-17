@@ -22,13 +22,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <div className="">{children}</div>
 
-<div className="footer bg-base-content text-base-100 p-6">
-https://github.com/mac11fish/mac11.fish
+<div className="footer border-t-1 p-6 pb-24 text-xs">
+
 <ul>
-<li>Inkscape</li>
-<li>KDEnlive</li>
-<li>VSCodium</li>
-<li>OHNO Type Co.</li>
+<li>https://github.com/mac11fish/mac11.fish</li>
 <li>© 2024. This work is openly licensed where applicable via <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0.</a></li>
 </ul>
 
