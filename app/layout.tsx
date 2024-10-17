@@ -24,7 +24,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 <div className="footer bg-base-content text-base-100 p-6">
 https://github.com/mac11fish/mac11.fish
-© 2024. This work is openly licensed via <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0.</a>
+<ul>
+<li>Inkscape</li>
+<li>KDEnlive</li>
+<li>VSCodium</li>
+<li>OHNO Type Co.</li>
+<li>© 2024. This work is openly licensed where applicable via <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0.</a></li>
+</ul>
+
 </div>
       </body>
     </html>
