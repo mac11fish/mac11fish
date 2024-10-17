@@ -1,7 +1,7 @@
 # mac11fish portfolio website
 based on Next.js Contentlayer Example
 
-(https://mac11fish.vercel.app/images/ss.mac11fish.website.png)
+[(https://mac11fish.vercel.app/images/ss.mac11fish.website.png)]
 
 
 typeface credits: 
