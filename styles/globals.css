@@ -69,7 +69,7 @@ h1 {
 }
 
 a {
-@apply hover:underline
+@apply underline
 }
 
 media-rendition-menu-button {

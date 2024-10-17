@@ -21,6 +21,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ProgressLine />
 
         <div className="">{children}</div>
+
+<div className="footer bg-base-content text-base-100 p-6">
+https://github.com/mac11fish/mac11.fish
+© 2024. This work is openly licensed via <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0.</a>
+</div>
       </body>
     </html>
   )
