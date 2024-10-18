@@ -4,19 +4,19 @@
 
 
   @font-face {
-    font-family: "DegularMono-Thin";
+    font-family: "SuisseIntlMono-Bold-WebXL";
     font-style: normal;
-
+    font-weight: 600;
     font-display: swap;
-    src: url(./fonts/ohno_degular/DegularMono-Regular.woff2) format("woff");
+    src: url(./fonts/SuisseIntlMono-Bold-WebXL.woff) format("woff");
   }
 
   @font-face {
-    font-family: "Degular-Light";
+    font-family: "SuisseIntlMono-Thin-WebXL";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./fonts/ohno_degular/DegularMono-Light.woff2) format("woff");
+    src: url(./fonts/SuisseIntlMono-Thin-WebXL.woff) format("woff");
   }
 
   @font-face {
@@ -29,7 +29,7 @@
 
 
   body {
-     font-family: "Degular-Light", serif;
+     font-family: "SuisseIntlMono-Thin-WebXL", serif;
   }
 
 h1 {    

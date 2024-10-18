@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 <ul>
 <li>https://github.com/mac11fish/mac11.fish</li>
-<li>© 2024. This work is openly licensed where applicable via <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0.</a></li>
+<li>© 2024. This work is openly licensed via <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0.</a></li>
 </ul>
 
 </div>

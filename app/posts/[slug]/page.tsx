@@ -22,7 +22,12 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
 
   return (
 <>
-{vidList.map((i, idx) => (
+
+{
+/* check to see if videoGif is present */
+post?.videos ? 
+
+vidList.map((i, idx) => (
         <div className="w-full pt-[600px]" key={idx}>
             <MuxPlayer
   nohotkeys
@@ -36,7 +41,11 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
   secondaryColor="#00000000"
 />
         </div>
-      ))}
+      ))
+:
+<p>xxx</p>
+}
+
             
     <article className="md:flex">
 
@@ -66,14 +75,14 @@ img src={i}/>
 
 
       </div>
-      <div className="w-full p-6 top-12 fixed md:top-6 text-xs z-[1000]">
+      <div className="w-2/3 p-6 top-12 fixed md:top-6 text-xs z-[1000]">
 <h1 className="pb-8 ">{post.title}</h1>
 <time dateTime={post.date} className="mb-1">
           {format(parseISO(post.date), 'LLLL d, yyyy')}
         </time>
 
-<p className="">{post.credits}</p>
-<Content className=""/>
+<p className="description">{post.description}</p>
+<Content className="full-content"/>
 </div>
     </article>
 </>
