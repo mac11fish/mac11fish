@@ -2,45 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "SuisseIntlMono-Bold-WebXL";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./fonts/SuisseIntlMono-Bold-WebXL.woff) format("woff");
+}
 
-  @font-face {
-    font-family: "SuisseIntlMono-Bold-WebXL";
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(./fonts/SuisseIntlMono-Bold-WebXL.woff) format("woff");
-  }
+@font-face {
+  font-family: "SuisseIntlMono-Regular-WebXL";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/SuisseIntlMono-Regular-WebXL.woff) format("woff");
+}
 
-  @font-face {
-    font-family: "SuisseIntlMono-Regular-WebXL";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(./fonts/SuisseIntlMono-Regular-WebXL.woff) format("woff");
-  }
+@font-face {
+  font-family: "Obviously-ExtendedMedium";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./fonts/ohno_obviously/Obviously-ExtendedMedium.woff) format("woff");
+}
 
-  @font-face {
-    font-family: "Obviously-ExtendedMedium";
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(./fonts/ohno_obviously/Obviously-ExtendedMedium.woff) format("woff");
-  }
+body {
+  font-family: "SuisseIntlMono-Regular-WebXL", serif;
+}
 
+h1 {
+  font-family: "Obviously-ExtendedMedium", serif;
+}
 
-  body {
-     font-family: "SuisseIntlMono-Regular-WebXL", serif;
-  }
-
-h1 {    
-     font-family: "Obviously-ExtendedMedium", serif;
-
-  }
-
-.post-title {    
-    font-family: "Obviously-ExtendedMedium", serif;
-
-  }
+.post-title {
+  font-family: "Obviously-ExtendedMedium", serif;
+}
 
 p {
   @apply mb-6;
@@ -56,38 +52,34 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold
-
+  @apply font-bold;
 }
 
 h1 {
-  
 }
 
 :root {
-@apply transition-colors duration-1000
+  @apply transition-colors duration-1000;
 }
 
 a {
-@apply underline
+  @apply underline;
 }
 
 media-rendition-menu-button {
-    display: none;
+  display: none;
 }
 
+mux-player::part(bottom rendition button) {
+  display: none;
+}
 
-
- mux-player::part(bottom rendition button) {
-    display: none;
-  }
-
- mux-player::part(bottom playback-rate button) {
-    display: none;
-  }
+mux-player::part(bottom playback-rate button) {
+  display: none;
+}
 
 mux-player {
-/*
+  /*
   --time-range: none;
   --fullscreen-button: none;
   --play-button: none;
@@ -116,13 +108,10 @@ mux-player {
 
   --pip-button: none;
 
-
   --playback-rate-button: none;
   --volume-range: none;
 
   --duration-display: none;
-
-
 
   /* Target a specific section by prefixing the CSS var with (top|center|bottom) 
   --center-controls: none;
