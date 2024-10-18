@@ -28,9 +28,11 @@ post?.videoGif ?
 <Link className="bg-base-content pt-6" href={post.url}>
 <img className="object-cover w-full" src={animatedGif} />
 </Link>
- : /* if videoGif is not present, load the first image in the images array */
+ : /* if videoGif is not present, load the first image in the images array, if that exists */
 <Link className="bg-base-content" href={post.url}>
-{post?.images ? <img src={post.images[0]} /> : <>{post.title}</> }
+{post?.images ? <img src={post.images[0]} />
+ : /* if there is no first image, load the title of the post, which is a required field */
+<>{post.title}</> }
 </Link>
 }
 
@@ -47,7 +49,7 @@ post?.videoGif ?
 
 
 <div className="post-content pt-4">
-        <Content />
+        {post.description}
       </div>
 
                 </div>
