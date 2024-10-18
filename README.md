@@ -6,7 +6,9 @@ based on Next.js Contentlayer Example
 
 typeface credits: 
 OHNO Type Co.
-OHNO Degular Mono and OHNO Obviously are featured
+Swiss Typeface Co.
+
+Swiss Int'l Mono and OHNO Obviously are featured
 
 ## Demo
 
@@ -26,3 +28,10 @@ Install dependencies:
 Run dev server:
 
     npm run dev
+
+
+
+## Please note
+
+When installing dependencies, you may need to run with '--legacy-peer-deps' flag, if you encounter an error. [more info here](https://github.com/timlrx/pliny/issues/78)
+
