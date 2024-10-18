@@ -12,11 +12,11 @@
   }
 
   @font-face {
-    font-family: "SuisseIntlMono-Thin-WebXL";
+    font-family: "SuisseIntlMono-Regular-WebXL";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./fonts/SuisseIntlMono-Thin-WebXL.woff) format("woff");
+    src: url(./fonts/SuisseIntlMono-Regular-WebXL.woff) format("woff");
   }
 
   @font-face {
@@ -29,7 +29,7 @@
 
 
   body {
-     font-family: "SuisseIntlMono-Thin-WebXL", serif;
+     font-family: "SuisseIntlMono-Regular-WebXL", serif;
   }
 
 h1 {    
