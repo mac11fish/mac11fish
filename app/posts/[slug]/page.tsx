@@ -75,14 +75,18 @@ img src={i}/>
 
 
       </div>
-      <div className="w-2/3 p-6 top-12 fixed md:top-6 text-xs z-[1000]">
+
+
+      <div className="p-6 top-12 fixed md:top-6 text-xs z-[1000]">
 <h1 className="pb-8 ">{post.title}</h1>
+      <div className="md:w-2/3">
 <time dateTime={post.date} className="mb-1">
           {format(parseISO(post.date), 'LLLL d, yyyy')}
         </time>
 
 <p className="description">{post.description}</p>
 <Content className="full-content"/>
+</div>
 </div>
     </article>
 </>
