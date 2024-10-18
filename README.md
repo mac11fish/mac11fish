@@ -3,13 +3,14 @@ Based on Next.js the [next-contentlayer-example](https://github.com/contentlayer
 [contentlayer](https://github.com/contentlayerdev/contentlayer)
 
 
-![screenshot](https://mac11fish.vercel.app/images/ss.mac11fish.website.png)
+![screenshot](https://mac11fish.vercel.app/images/readme/ss.mac11fish.website.png)
 
 
 Font Credits: 
+![fonts](https://mac11fish.vercel.app/images/readme/fonts.png)
+'Suisse Int'l Mono' and 'Obviously' by OHNO are featured
  - [OHNO Type Co.](https://ohnotype.co/fonts/obviously)
  - [Swiss Typefaces](https://www.swisstypefaces.com/fonts/suisse)
-'Suisse Int'l Mono' and 'Obviously' by OHNO are featured
 
 ## Demo
 

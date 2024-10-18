@@ -20,7 +20,7 @@ function PostCard(post: Post) {
 <>
 
 
-<div  className="w-full md:w-2/3 space-y-6">
+<div  className="w-full md:w-3/4 space-y-6">
 
 {
 /* check to see if videoGif is present */
@@ -41,7 +41,7 @@ post?.videoGif ?
         
     </div>
 
-<div className="w-full p-6 md:w-1/3 md:left-2/3 text-xs " >
+<div className="w-full p-6 md:w-1/4 md:left-3/4 text-xs " >
               
         <Link className="no-underline" href={post.url}>
           <h2 className="text-sm uppercase post-title">{post.title} </h2>
