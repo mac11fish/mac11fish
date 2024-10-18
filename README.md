@@ -1,10 +1,12 @@
-# mac11fish portfolio website
-based on Next.js Contentlayer Example
+# mac11fish Portfolio Website
+Based on Next.js the [next-contentlayer-example](https://github.com/contentlayerdev/next-contentlayer-example/tree/88da08590d6a19c9d1678007c0f2a40513d12981) repository.
+[contentlayer](https://github.com/contentlayerdev/contentlayer)
 
-[![screenshot](https://mac11fish.vercel.app/images/ss.mac11fish.website.png)]
+
+![screenshot](https://mac11fish.vercel.app/images/ss.mac11fish.website.png)
 
 
-font credits: 
+Font Credits: 
  - [OHNO Type Co.](https://ohnotype.co/fonts/obviously)
  - [Swiss Typefaces](https://www.swisstypefaces.com/fonts/suisse)
 'Suisse Int'l Mono' and 'Obviously' by OHNO are featured
