@@ -43,7 +43,7 @@ post?.videoGif ?
 
 <div className="w-full p-6 md:w-1/3 md:left-2/3 text-xs " >
               
-        <Link href={post.url}>
+        <Link className="no-underline" href={post.url}>
           <h2 className="text-sm uppercase post-title">{post.title} </h2>
 </Link>
 
