@@ -43,9 +43,9 @@ post?.videoGif ?
 
 <div className="w-full p-6 md:w-1/3 md:left-2/3 text-xs " >
               
-        
-          <h2 className="text-sm uppercase post-title">{post.title}      </h2>
-
+        <Link href={post.url}>
+          <h2 className="text-sm uppercase post-title">{post.title} </h2>
+</Link>
 
 
 <div className="post-content pt-4">
