@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <div className="">{children}</div>
 
-<div className="footer border-t-1 p-6 pb-24 text-xs">
+<div className="footer border-t-1 p-6 pb-48 text-xs">
 
 <ul>
 <li>https://github.com/mac11fish/mac11.fish</li>
