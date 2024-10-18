@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html>
 
-      <body>
+      <body className="text-xs">
 <Link href="/">
         <Mac11fishLogo />
 </Link>
@@ -22,10 +22,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <div className="">{children}</div>
 
-<div className="footer border-t-1 p-6 pb-48 text-xs">
+<div className="footer border-t-1 p-6 pb-48">
 
 <ul>
-<li>https://github.com/mac11fish/mac11.fish</li>
+<li>https://github.com/mac11fish</li>
 <li>© 2024. This work is openly licensed via <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0.</a></li>
 </ul>
 
