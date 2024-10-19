@@ -42,13 +42,13 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
             </div>
           ))
         ) : (
-          <p></p>
+          ""
         )
       }
 
       <article className="md:flex">
         <div className="w-full md:w-3/4">
-          <ul className="space-y-[420px] md:pr-12 text-xs">
+          <ul className="space-y-[420px] md:pr-12">
             <li className="content-start">
               <ScrollDown />
             </li>

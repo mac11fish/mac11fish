@@ -31,7 +31,6 @@ const Post = defineDocumentType(() => ({
       type: 'list',
       description: 'Array list of video IDs',
       of: { type: 'string' },
-      default: [''],
     },
     date: {
       type: 'date',
