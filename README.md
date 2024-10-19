@@ -36,6 +36,8 @@ Run dev server:
 
 
 ## Please note
+![screenshot](https://mac11fish.vercel.app/images/error-contentlayer.png)
+If you get this error after running 'npm i', run 'npm i --legacy-peer-deps' instead. [more info here](https://github.com/timlrx/pliny/issues/78)
 
-- When installing dependencies, you may need to run with '--legacy-peer-deps' flag, if you encounter an error. [more info here](https://github.com/timlrx/pliny/issues/78)
+
 - When configuring Mux Player, add your own tokens in an '.env.local' file

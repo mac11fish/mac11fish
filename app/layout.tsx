@@ -22,7 +22,7 @@ export default function RootLayout({
         </Link>
         <ProgressLine />
 
-        <div className="">{children}</div>
+        {children}
 
         <div className="p-6 pb-48">
           <ul>
