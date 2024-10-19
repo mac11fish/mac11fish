@@ -1,3 +1,8 @@
+import { HOME_OG_IMAGE_URL } from "@/lib/constants";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+
 import "@/styles/globals.css";
 import { ProgressLine } from "@/components/progress_line";
 import { Mac11fishLogo } from "@/components/mac11fish_logo";
@@ -7,6 +12,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "mac11fish",
   description: "..",
+  openGraph: {
+    images: [HOME_OG_IMAGE_URL],
+  },
 };
 
 export default function RootLayout({
