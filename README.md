@@ -37,11 +37,8 @@ Run dev server:
 
 ## Please note
 ![screenshot](https://mac11fish.vercel.app/images/error-contentlayer.png)
-If you get this 'ERESOLVE' error after running 'npm i',
+If you get this 'ERESOLVE' error after running 'npm i', run 'npm i --legacy-peer-deps' instead. [more info here](https://github.com/timlrx/pliny/issues/78)
 
     npm i --legacy-peer-deps
-
-run 'npm i --legacy-peer-deps' instead. [more info here](https://github.com/timlrx/pliny/issues/78)
-
 
 - When configuring Mux Player, add your own tokens in an '.env.local' file
