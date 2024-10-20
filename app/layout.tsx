@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "mac11fish",
-  description: "..",
+  description: "😊",
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
